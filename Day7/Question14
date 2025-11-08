@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    char c;
+    printf("Enter a character in upper case: ");
+    scanf("%c", &c);
+    if(c=='A' || c=='E' || c=='I' || c=='O' || c=='U')
+    {
+        printf("Vowel");
+    }
+    else
+    {
+        printf("Constant");
+    }
+    return 0;
+}
