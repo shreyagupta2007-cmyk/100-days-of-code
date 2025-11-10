@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf("Enter a number(1-12): ");
+    scanf("%d", &n);
+    switch(n)
+    {
+        case 1: printf("January\nNo. of days-31");
+        break;
+        case 2: printf("February\nNo. of days-28");
+        break;
+        case 3: printf("March\nNo. of days-31");
+        break;
+        case 4: printf("April\nNo. of days-30");
+        break;
+        case 5: printf("May\nNo. of days-31");
+        break;
+        case 6: printf("June\nNo. of days-30");
+        break;
+        case 7: printf("July\nNo. of days-31");
+        break;
+        case 8: printf("August\nNo. of days-31");
+        break;
+        case 9: printf("September\nNo. of days-30");
+        break;
+        case 10: printf("October\nNo. of days-31");
+        break;
+        case 11: printf("November\nNo. of days-30");
+        break;
+        case 12: printf("December\nNo. of days-31");
+        break;
+        default: printf("Invalid input");
+        break; 
+    }
+    return 0;
+}
