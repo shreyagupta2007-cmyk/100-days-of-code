@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,n,add,sub,mult;
+    float div,rem;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    printf("1)Addition\n2)Subtraction\n3)Multiplication\n4)Division\n5)Remainder\n");
+    printf("Enter your choice: ");
+    scanf("%d", &n);
+    switch(n)
+    {
+        case 1: add=a+b;
+        printf("Addition of both no.: %d", add);
+        break;
+        case 2: sub=a-b;
+        printf("Subtraction of both no.: %d", sub);
+        break;
+        case 3: mult=a*b;
+        printf("Multiplication of both no.: %d", mult);
+        break;
+        case 4: div=a/b;
+        printf("Division of two no.: %f", div);
+        break;
+        case 5: rem=a%b;
+        printf("Remainder of two no.: %f", rem);
+        break;
+        default: printf("Invalid input");
+        break;
+    }
+}
