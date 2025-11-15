@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,x,y,temp,gcd;
+    printf("Enter first number: ");
+    scanf("%d", &a);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+    x=a;
+    y=b;
+    while(b>0)
+    {
+        temp=b;
+        b=a%b;
+        a=temp;
+    }
+    gcd=a;
+    printf("GCD of %d,%d:%d", x, y, a);
+    return 0;
+}
