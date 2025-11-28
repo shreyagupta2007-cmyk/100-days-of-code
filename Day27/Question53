@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() 
+{
+    int i, j;
+    int n = 9;  
+    int stars;
+    for (stars = 1; stars <= n; stars += 2) 
+    {
+        for (j = 1; j <= stars; j++) 
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for (stars = n - 2; stars >= 1; stars -= 2) 
+    {
+        for (j = 1; j <= stars; j++) 
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
