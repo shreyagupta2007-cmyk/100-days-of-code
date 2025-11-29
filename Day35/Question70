@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() 
+{
+    int arr[50], n, k, i;
+    int temp;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    printf("Enter array elements: ");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+    printf("Enter k (number of rotations): ");
+    scanf("%d", &k);
+    k = k % n;
+    while(k--) 
+    {
+        temp = arr[n - 1];
+        for(i = n - 1; i > 0; i--) 
+            arr[i] = arr[i - 1];
+        arr[0] = temp;
+    }
+    printf("Array after right rotation: ");
+    for(i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+    return 0;
+}
